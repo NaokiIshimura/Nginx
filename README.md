@@ -10,7 +10,8 @@
 $ sugo yum install -y nginx
 ```
 
-補足：[CentOSにnginxをインストールする方法 \- Qiita](https://qiita.com/NaokiIshimura/items/08aac94a184d1a00d39b)
+補足：
+[CentOSにnginxをインストールする方法 \- Qiita](https://qiita.com/NaokiIshimura/items/08aac94a184d1a00d39b)
 
 ---
 
@@ -75,7 +76,7 @@ $ sudo systemctl disable nginx.service
 
 ---
 
-# 設定ファイル
+# コンフィグ
 
 ## nginx.conf
 
@@ -94,7 +95,7 @@ $ sudo systemctl disable nginx.service
 /etc/nginx/sites-enabled
 ```
 
-## 設定ファイル
+## コンフィグ
 
 ```
 /etc/nginx/sites-available/my-app
@@ -105,3 +106,18 @@ $ sudo systemctl disable nginx.service
 ```
 ln -s /etc/nginx/sites-available/my-app /etc/nginx/sites-enabled/my-app
 ```
+
+---
+
+# sample
+
+## sorry
+
+sorryページで利用するコンフィグ
+
+## rails-passenger
+
+RailsアプリをPassengerと連携させるコンフィグ
+
+参考：
+[CentOSにnginxとpassengerを導入してRailsアプリと連携させる \- Qiita](https://qiita.com/NaokiIshimura/items/24e0b911ca411421205a)
