@@ -2,6 +2,18 @@
 
 ---
 
+# インストール
+
+## CentOS
+
+```
+$ sugo yum install -y nginx
+```
+
+補足：[CentOSにnginxをインストールする方法 \- Qiita](https://qiita.com/NaokiIshimura/items/08aac94a184d1a00d39b)
+
+---
+
 # コマンド
 
 ## 基本
