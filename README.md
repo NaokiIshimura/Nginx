@@ -10,8 +10,8 @@
 $ sugo yum install -y nginx
 ```
 
-補足：
-[CentOSにnginxをインストールする方法 \- Qiita](https://qiita.com/NaokiIshimura/items/08aac94a184d1a00d39b)
+補足
+- [CentOSにnginxをインストールする方法 \- Qiita](https://qiita.com/NaokiIshimura/items/08aac94a184d1a00d39b)
 
 ---
 
@@ -111,8 +111,9 @@ ln -s /etc/nginx/sites-available/my-app /etc/nginx/sites-enabled/my-app
 
 # リバースプロキシ
 
-参考：
-[How to proxy web apps using nginx?](https://gist.github.com/soheilhy/8b94347ff8336d971ad0)
+参考
+- [How to proxy web apps using nginx?](https://gist.github.com/soheilhy/8b94347ff8336d971ad0)
+- [nginx でリバースプロキシするときの Tips : あかぎメモ](http://blog.akagi.jp/archives/3883.html)
 
 ---
 
@@ -126,8 +127,8 @@ sorryページで利用するコンフィグ
 
 RailsアプリをPassengerと連携させるコンフィグ
 
-参考：
-[CentOSにnginxとpassengerを導入してRailsアプリと連携させる \- Qiita](https://qiita.com/NaokiIshimura/items/24e0b911ca411421205a)
+参考
+- [CentOSにnginxとpassengerを導入してRailsアプリと連携させる \- Qiita](https://qiita.com/NaokiIshimura/items/24e0b911ca411421205a)
 
 ## rails-sock
 
