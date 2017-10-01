@@ -109,6 +109,13 @@ ln -s /etc/nginx/sites-available/my-app /etc/nginx/sites-enabled/my-app
 
 ---
 
+# リバースプロキシ
+
+参考：
+[How to proxy web apps using nginx?](https://gist.github.com/soheilhy/8b94347ff8336d971ad0)
+
+---
+
 # sample
 
 ## sorry
@@ -121,3 +128,11 @@ RailsアプリをPassengerと連携させるコンフィグ
 
 参考：
 [CentOSにnginxとpassengerを導入してRailsアプリと連携させる \- Qiita](https://qiita.com/NaokiIshimura/items/24e0b911ca411421205a)
+
+## rails-sock
+
+RailsアプリをUnixドメインソケットで連携させるコンフィグ
+
+## reverse-proxy
+
+リバースプロキシのサンプルコンフィグ
