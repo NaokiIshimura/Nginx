@@ -10,11 +10,11 @@ server {
   access_log  /var/log/nginx/helllo-app_access.log;
   error_log   /var/log/nginx/hello-app_error.log;
 
-  location ~ ^/assets/ {
-    root   /home/xxx/hello-app/public;
-  }
-
   location / {
+    try_files $uri @app;
+  }
+  
+  location @app {
     client_max_body_size 0;
     gzip off;
 
