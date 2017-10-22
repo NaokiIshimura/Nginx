@@ -115,6 +115,11 @@ ln -s /etc/nginx/sites-available/my-app /etc/nginx/sites-enabled/my-app
 - [How to proxy web apps using nginx?](https://gist.github.com/soheilhy/8b94347ff8336d971ad0)
 - [nginx でリバースプロキシするときの Tips : あかぎメモ](http://blog.akagi.jp/archives/3883.html)
 
+# Rails
+
+参考
+- [【Rails】WEB/APサーバ構成に応じたNginx設定 \- Qiita](https://qiita.com/NaokiIshimura/items/7cb2390243939a34754f#rails)
+
 ---
 
 # sample
@@ -122,6 +127,10 @@ ln -s /etc/nginx/sites-available/my-app /etc/nginx/sites-enabled/my-app
 ## sorry
 
 sorryページで利用するコンフィグ
+
+## reverse-proxy
+
+リバースプロキシのサンプルコンフィグ
 
 ## rails-passenger
 
@@ -134,6 +143,17 @@ RailsアプリをPassengerと連携させるコンフィグ
 
 RailsアプリをUnixドメインソケットで連携させるコンフィグ
 
-## reverse-proxy
+config/puma.rb
 
-リバースプロキシのサンプルコンフィグ
+```
+# UNIXドメインソケット
+bind "unix://#{Rails.root}/tmp/sockets/puma.sock"
+```
+
+## rails-proxy
+
+Railsアプリをリバースプロキシで連携させるコンフィグ
+
+## rails-loadbalancing
+
+Railsアプリをロードバランシングで連携させるコンフィグ
