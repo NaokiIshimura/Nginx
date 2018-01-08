@@ -122,6 +122,22 @@ ln -s /etc/nginx/sites-available/my-app /etc/nginx/sites-enabled/my-app
 
 ---
 
+# mac
+
+## install
+
+```
+$ brew install nginx
+```
+
+## nginx.conf
+
+```
+/usr/local/etc/nginx/nginx.conf
+```
+
+---
+
 # sample
 
 ## sorry
